@@ -1,7 +1,5 @@
 package application.domain;
 
-import org.springframework.data.annotation.Id;
-
 import javax.persistence.*;
 import java.util.Date;
 
@@ -17,6 +15,7 @@ public class Project {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column
 	private Long id;
 
 	@Column
